@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300;400&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-image: url("snakebg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(192, 238, 192), rgb(229, 229, 150));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+#gameScore{
+    font-family: 'Balsamiq Sans', 'cursive';
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    font-size: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.title{
+    font-family: 'Balsamiq Sans', 'cursive';
+    position: absolute;
+    top: 30px;
+    right: 17px;
+    font-size: 27px;
+}
+#Hscore{
+    font-family: 'Balsamiq Sans', 'cursive';
+    position: absolute;
+    top: 120px;
+    left: 37px;
+    font-size: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.head{
+    background-image: url(nsnake.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid purple;
+    border-radius: 12px;
+    transform: scale(1.05);
+}
+.snake{
+    background: linear-gradient(blue, purple);
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 10px;
+}
